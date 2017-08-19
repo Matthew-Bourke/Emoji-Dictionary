@@ -62,8 +62,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0c-Pc-mID">
-                                <rect key="frame" x="136" y="403" width="103" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0c-Pc-mID">
+                                <rect key="frame" x="165" y="403" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnd-fL-5DL">
+                                <rect key="frame" x="152" y="454" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPH-Js-x6w">
+                                <rect key="frame" x="144" y="505" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -73,14 +85,20 @@
                         <constraints>
                             <constraint firstItem="OLM-3b-7U8" firstAttribute="centerX" secondItem="Vec-jr-E4L" secondAttribute="centerX" id="0ID-IM-gOU"/>
                             <constraint firstItem="OLM-3b-7U8" firstAttribute="centerX" secondItem="Vec-jr-E4L" secondAttribute="centerX" id="APc-23-lGO"/>
+                            <constraint firstItem="rnd-fL-5DL" firstAttribute="top" secondItem="e0c-Pc-mID" secondAttribute="bottom" constant="30" id="C1r-ty-tAX"/>
+                            <constraint firstItem="KPH-Js-x6w" firstAttribute="centerX" secondItem="Vec-jr-E4L" secondAttribute="centerX" id="DhK-WW-PaY"/>
+                            <constraint firstItem="KPH-Js-x6w" firstAttribute="top" secondItem="rnd-fL-5DL" secondAttribute="bottom" constant="30" id="JpL-sJ-LnS"/>
                             <constraint firstItem="e0c-Pc-mID" firstAttribute="top" secondItem="OLM-3b-7U8" secondAttribute="bottom" constant="50" id="TdR-WU-Tdv"/>
+                            <constraint firstItem="rnd-fL-5DL" firstAttribute="centerX" secondItem="Vec-jr-E4L" secondAttribute="centerX" id="eCv-Aa-BPV"/>
                             <constraint firstItem="OLM-3b-7U8" firstAttribute="top" secondItem="xvl-Fw-Yj0" secondAttribute="bottom" constant="50" id="luh-9k-EiT"/>
                             <constraint firstItem="e0c-Pc-mID" firstAttribute="centerX" secondItem="Vec-jr-E4L" secondAttribute="centerX" id="tQk-zw-83e"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="rnd-fL-5DL" id="dcd-uy-vTw"/>
                         <outlet property="defLabel" destination="e0c-Pc-mID" id="gyg-8F-guq"/>
                         <outlet property="emojiLabel" destination="OLM-3b-7U8" id="9DN-6B-iBz"/>
+                        <outlet property="originLabel" destination="KPH-Js-x6w" id="Rkw-zn-BYO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mla-nl-js7" userLabel="First Responder" sceneMemberID="firstResponder"/>

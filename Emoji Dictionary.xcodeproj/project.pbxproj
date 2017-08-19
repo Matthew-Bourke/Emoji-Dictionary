@@ -15,6 +15,7 @@
 		C935A9D21F472DC000FEB0C3 /* Emoji_DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935A9D11F472DC000FEB0C3 /* Emoji_DictionaryTests.swift */; };
 		C935A9DD1F472DC000FEB0C3 /* Emoji_DictionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935A9DC1F472DC000FEB0C3 /* Emoji_DictionaryUITests.swift */; };
 		C9DA03851F473EB3002802DD /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA03841F473EB3002802DD /* DefinitionViewController.swift */; };
+		C9DA03871F47BF33002802DD /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA03861F47BF33002802DD /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		C935A9D81F472DC000FEB0C3 /* Emoji DictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji DictionaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935A9DC1F472DC000FEB0C3 /* Emoji_DictionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_DictionaryUITests.swift; sourceTree = "<group>"; };
 		C935A9DE1F472DC000FEB0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9DA03841F473EB3002802DD /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		C9DA03841F473EB3002802DD /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C9DA03861F47BF33002802DD /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				C935A9BC1F472DC000FEB0C3 /* AppDelegate.swift */,
 				C935A9BE1F472DC000FEB0C3 /* ViewController.swift */,
+				C9DA03861F47BF33002802DD /* Emoji.swift */,
 				C9DA03841F473EB3002802DD /* DefinitionViewController.swift */,
 				C935A9C01F472DC000FEB0C3 /* Main.storyboard */,
 				C935A9C31F472DC000FEB0C3 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				C935A9BF1F472DC000FEB0C3 /* ViewController.swift in Sources */,
 				C9DA03851F473EB3002802DD /* DefinitionViewController.swift in Sources */,
+				C9DA03871F47BF33002802DD /* Emoji.swift in Sources */,
 				C935A9BD1F472DC000FEB0C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

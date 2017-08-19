@@ -12,39 +12,20 @@ class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var defLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var originLabel: UILabel!
     
-    var emoji = "NO EMOJI"
+    var emoji = Emoji()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
-        
-        if emoji == "😊" {
-            defLabel.text = "Typical smiley face"
-        }
-        
-        if emoji == "🙃" {
-            defLabel.text = "Upside down smiley"
-        }
-        
-        if emoji == "😏" {
-            defLabel.text = "Cheeky face"
-        }
-        
-        if emoji == "😎" {
-            defLabel.text = "Cool guy with sunnies"
-        }
-        
-        if emoji == "💩" {
-            defLabel.text = "Poop"
-        }
-        
-        if emoji == "🐹" {
-            defLabel.text = "A cute hamster"
-        }
+        emojiLabel.text = emoji.realEmoji
+        defLabel.text = emoji.nameEmoji
+        categoryLabel.text = "Category: \(emoji.categoryEmoji)"
+        originLabel.text = "Origin: \(emoji.originEmoji)"
     }
 
     override func didReceiveMemoryWarning() {
